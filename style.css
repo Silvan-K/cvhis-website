@@ -1,0 +1,93 @@
+
+/* Relative to font size of root element, which defaults to 1px, but adjusts to user's preferences
+   font size: "rem". "em": relative to font size of immediate parent element.
+
+   width: percentage coupled with max width. Max width for text with "ch", i.e. width of character
+   "o". Effectively sets approximate number of characters per line, which should max to (preferrably
+   less than) 75.
+
+   Height: use min-height: %/rem
+
+   Padding/margin: em/rem. E.g. buttons. rem will make sure padding scales with font size
+
+   Width: ch (number of characters based on font size used)
+*/
+
+/* Select n-th child, regardless of what type (div/nav/ul/whatever) it is */
+/* .container > *:nth-child(n) */
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* h2 { */
+/*     text-align: center; */
+/* } */
+
+footer {
+    text-align: center;
+}
+
+header > div {
+    margin: 0 auto;
+    max-width: 1536px;
+}
+
+.header-image-container img {
+    width: 100%; /* or any custom size */
+    height: 100%; 
+    object-fit: contain;
+}
+
+.header-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; /*space-around; */
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 1536px;
+}
+
+header * > nav > ul {
+    display: flex;
+    /* List bullets inside of the container */
+    list-style-position: inside;
+    list-style: none;
+    gap: 1em;
+}
+
+.subsection-container {
+    display: flex;
+    /* For mobile: let items apear below one another if narrow viewport */
+    flex-wrap: wrap;
+    gap: 10em;
+    justify-content: center;
+}
+
+/* Syntax: every direct child of 'subsection-content' */
+.subsection-container > * {
+    /* flex-grow=1 flex-shrink=1 flex-basis=0: all boxes same width */
+    flex: 1 1 0;
+    max-width: 50ch;
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.name {
+  flex-grow: 1;
+  flex-basis: 160px;
+}
+.email {
+  flex-grow: 3;
+  flex-basis: 200px;
+}
+button {
+  flex-grow: 1;
+  flex-basis: 80px;
+}
