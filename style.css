@@ -92,7 +92,7 @@ main * > ul {
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* Syntax: every direct child of 'subsection-content' */
