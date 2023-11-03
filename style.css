@@ -66,7 +66,7 @@ header * > nav > ul {
     gap: 1em;
 }
 
-ul li::before {
+main * > ul li::before {
   content: '✔';
   color: black;
   line-height: 1.4em;
@@ -74,11 +74,18 @@ ul li::before {
 }
 
 
-body * > ul {
+main * > ul {
     list-style: none;
     margin-left: 0;
     padding-left: 0.5em;
 
+}
+
+.captioned-blocks-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
 }
 
 .cards-container {
@@ -91,8 +98,8 @@ body * > ul {
 /* Syntax: every direct child of 'subsection-content' */
 .cards-container > * {
     /* flex-grow=1 flex-shrink=1 flex-basis=0: all boxes same width */
-    flex: 1 1 0;
-    max-width: 50ch;
+    /* flex: 1 1 0; */
+    max-width: 40ch;
 }
 
 .why-us-container {
@@ -104,13 +111,11 @@ body * > ul {
 
 .captioned-block  {
     margin-bottom: 3em;
-
 }
 
 .captioned-block p {
     max-width: 40ch;
     font-style: italic;
-    
 }
 
 form {
