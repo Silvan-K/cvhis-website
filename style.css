@@ -130,7 +130,7 @@ main * > ul {
 
 .get-in-touch-container {
     display: flex;
-    fled-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: space-around;
 
 
@@ -138,7 +138,7 @@ main * > ul {
     max-width: 40ch;
 }
 
-.address-container {
-    background: black
-    font-style: bold;
+address {
+    font-style: normal;
+    font-size: 1.2em;
 }
