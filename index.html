@@ -1,104 +1,86 @@
 <!-- 
- + Section vs article:
-   https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/ 
+     + Section vs article:
+     https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/ 
 
- + 
--->
+     + 
+  -->
 
 <!-- 
 
- - "Why us", i.e. what sets us apart, why do we charge more
- - List of services
- - Urgent repairs emergency after-hours and weekend service
- - Contact details
- - Contact form (?)
- - Add Microdata using Schema.org  vocabularies
+     LAYOUT:
+     - Focus, set up focal points
+     - White space as quite space to rest the eye
 
--->
+     - "Why us", i.e. what sets us apart, why do we charge more
+     - List of services
+     - Urgent repairs emergency after-hours and weekend service
+     - Contact details
+     - Contact form (?)
+     - Add Microdata using Schema.org  vocabularies
+
+  -->
 
 <!DOCTYPE html>
 <html lang="en">
+
+
   <head>
     <title> Cumberland Home Improvement> </title>
     <link rel="stylesheet" href="style.css">
     <!-- <meta http-equiv="refresh" content="3" /> -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
-      rel="stylesheet"
-      >
-     
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   </head>
+
+  
   <body>
 
+
+    <!-- Header section: logo and navigation -->
     <header>    
-      <div class="header-container">
-        <div class="logo">
-          <h1> Cumberland Home Improvement Services</h1>
-          <p> Home repairs, maintenance, and handyman services in the Comox Valley </p>
-        </div>
-        <div class="">
-          <nav>
-            <ul>
-              <li><a href="#"> About </a>
-              <li><a href="#"> Services </a>
-              <li><a href="#"> Contact </a>
-            </ul>
-          </nav>
-        </div>
+      <div class="logo-container">
+        <img  class="logo" src="logo-white-on-transparent.png">
       </div>
-      <div class="header-image-container">
-        <img  src="handyman-on-ladder-cropped.jpg">
+      <div class="nav-container">
+        <nav>
+          <ul>
+            <li><a href="#"> <button class="nav-button" role="button"> Services </button> </a> </li>
+            <li><a href="#"> <button class="nav-button" role="button"> Why Us </button> </a> </li>
+            <li><a href="#"> <button class="nav-button" rolse="button"> Contact </button> </a> </li>
+          </ul>
+        </nav>
       </div>
+      <img class="main-image" src="handyman-on-ladder-cropped.jpg">
     </header>
 
+    
+
     <main>
-      <div class="main-container">
+      
 
-        <!--  TODO: make this a grid layout -->
-        <section>
 
+
+      <!--  Main section: what we do -->
+      <section>
+        <div class="section-textcontent-container">
           <div class="captioned-blocks-container">
- 
-           <div class="captioned-block">
+            <div class="captioned-block">
               <h2> What we do </h2>
               <p> It is out mission to make people feel comfortable in their homes and take the
                 headache out of real estate ownership. </p>
               <p> No matter whether it's your family home, a rental unit, or a commercial property, we
                 can help with maintenance, repair and small upgrades. </p>
             </div>
-            
-            <div class="captioned-block">
-              <h2> Why us </h2>
-              <p> When it comes to home repairs, you need someone you can depend on. We get your
-                needs addressed on time while keeping your home and personal spaces clean and
-                tidy.
-              </p>
-              <p>
-                We approach our work with attention to detail and pride in craftsmanship. By
-                adhering to industry best practices and using quality materials we make sure you can
-                rely on the work we provide.
-              </p>
-            </div>
           </div>
-
-          
-        </section>
-        
-      
-        <section>
-
           <!-- <div class="img-caption-container"> -->
-          <!--   <div> -->
-          <!--     <h2> Our services </h2> -->
-          <!--   </div> -->
-          <!--   <\!-- <div class="section-image-container"> -\-> -->
-          <!--   <\!--   <img  src="driver-cropped.jpg"> -\-> -->
-          <!--   <\!-- </div> -\-> -->
-          <!-- </div> -->
-          
+            <!--   <div> -->
+              <!--     <h2> Our services </h2> -->
+              <!--   </div> -->
+            <!--   <\!-- <div class="section-image-container"> -\-> -->
+              <!--   <\!--   <img  src="driver-cropped.jpg"> -\-> -->
+                <!--   <\!-- </div> -\-> -->
+                  <!-- </div> -->
           <div class="cards-container">
             <div>
               <h3> Repairs </h3>
@@ -123,19 +105,35 @@
               </ul>
             </div>
             <div>
-              <h3> Custom work </h3>
+              <h3> And much more... </h3>
               <p> Can't find what you're looking for? Please get in touch to discuss your individual
                 project and needs to find out if we can help. </p>
             </div>
           </div>
+        </div>
+      </section>
+      
 
-
-
-        </section>
-        
       <div class="section-image-container">
         <img  src="screwdriver-cropped.jpg">
       </div>
+
+
+      <section>
+        <div class="captioned-block">
+          <h2> Why us </h2>
+          <p> When it comes to home repairs, you need someone you can depend on. We get your
+            needs addressed on time while keeping your home and personal spaces clean and
+            tidy.
+          </p>
+          <p>
+            We approach our work with attention to detail and pride in craftsmanship. By
+            adhering to industry best practices and using quality materials we make sure you can
+            rely on the work we provide.
+          </p>
+        </div>
+      </section>
+
       
       <section class="sec-get-in-touch">
         <h2> Get in touch </h2>
@@ -143,20 +141,16 @@
           We are looking forward to discussing your needs with us. Give us a call, write an
           email, or text us. If we miss you, we will get back to you within 2 business days.
         </p>
-
         <div class="get-in-touch-container">
-          
           <div class="address-container">
             <address>
               <p>
                 Cumberland Home Improvement Services <br /> 2669 Derwent Avenue <br /> Cumberland <br />
-                  <a href="tel:+1-236-992-3903"> +1-236-992-3903 </a><br />
-                  <a href="mailto:info@cumberlandhomeimprovement.com">hello@cumberlandhomeimprovement.com </a>
+                <a href="tel:+1-236-992-3903"> +1-236-992-3903 </a><br />
+                <a href="mailto:info@cumberlandhomeimprovement.com">hello@cumberlandhomeimprovement.com </a>
               </p>
             </address>
           </div>
-
-          
           <div class="captioned-block">
             <ul>
               <li> Inquire about our services </li>
@@ -164,18 +158,16 @@
               <li> Request a quote </li>
             </ul>
           </div>
-
-
-          
         </div>
-        
       </section>
       
     </main>
 
+
     <footer>
       <!-- Remove if not needed -->
     </footer>
+
 
   </body>
 </html>
