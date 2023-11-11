@@ -53,22 +53,31 @@ header {
     width: 100%;
     heigth: auto;
     object-fit: contain;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 .logo-container {
     background-color: var(--color-1);
     width: 100%;
     padding: 0.5em 2em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
 .nav-container {
-    background-color: var(--color-3);
     width: 100%;
-    padding: 0.2em 2em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--color-3);
+    /* padding: 0.2em 2em; */
+    position: sticky;
+    top: 0;
+
 }
 
 nav > ul {
+    flex-grow: 0;
     display: flex;
     justify-content: flex-end;
     /* List bullets inside of the container */
@@ -85,7 +94,7 @@ nav * > button {
     padding: 0.7em;
     text-align: center;
     display: inline-block;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 footer {
@@ -108,7 +117,7 @@ footer {
 
 .sec-container {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 3em 1em;
     display: flex;
     flex-wrap: wrap;
@@ -123,7 +132,7 @@ footer {
     justify-content: space-evenly;
 }
 
-main * > ul li::before {
+main > ul li::before {
   content: '✔';
   color: black;
   line-height: 1.4em;
