@@ -53,27 +53,22 @@ header {
     width: 100%;
     heigth: auto;
     object-fit: contain;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 .logo-container {
     background-color: var(--color-1);
     width: 100%;
     padding: 0.5em 2em;
-    position: sticky;
-    top: 0;
-    z-index: 999;
 }
 
 .nav-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     background-color: var(--color-3);
-    /* padding: 0.2em 2em; */
-    position: sticky;
-    top: 0;
-
+    padding: 0.2em 2em;
 }
 
 nav > ul {
