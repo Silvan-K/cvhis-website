@@ -23,6 +23,10 @@
     --color-3: #f5b82e;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
@@ -54,25 +58,32 @@ header {
     heigth: auto;
     object-fit: contain;
     max-width: 1000px;
+    display: block;
 }
 
-.logo-container {
+.banner-container {
+    font-size: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--color-1);
+    flex-wrap: wrap;
     width: 100%;
     padding: 0.5em 2em;
 }
 
-.nav-container {
+.midbar-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
     background-color: var(--color-3);
     padding: 0.2em 2em;
 }
 
 nav > ul {
-    flex-grow: 0;
     display: flex;
     justify-content: flex-end;
     /* List bullets inside of the container */
@@ -89,7 +100,13 @@ nav * > button {
     padding: 0.7em;
     text-align: center;
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1em;
+}
+
+nav * > button:hover {
+    color: white;
+    background: var(--color-1);
+    transition: all 0.4s ease 0s;
 }
 
 footer {
@@ -127,7 +144,7 @@ footer {
     justify-content: space-evenly;
 }
 
-main > ul li::before {
+main * > ul li::before {
   content: '✔';
   color: black;
   line-height: 1.4em;
