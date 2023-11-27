@@ -126,14 +126,32 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    ul li::before {
+        content: '✔';
+        color: black;
+        line-height: 1.4em;
+        padding-right: 0.5em;
+    }
 }
 
-main * > ul li::before {
-  content: '✔';
-  color: black;
-  line-height: 1.4em;
-  padding-right: 0.5em;
+.wu-list-container {
+    min-width: 100%;
+    ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        font-size: 1.3em;
+        font-weight: bold;
+        gap: 0.7em;
+    }
+    ul li::after {
+        content: '✔';
+        line-height: 1.4em;
+        padding-left: 0.4em;
+    }
 }
+
 
 main * > ul {
     list-style: none;
