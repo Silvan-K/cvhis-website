@@ -1,3 +1,0 @@
-- For now taylor a bit towards residential (wording: "homeowner's to-do list")
-- Later on may change wording and list "residential" vs "commercial" services
-- Maybe weven explicitly address property management
